@@ -24,7 +24,7 @@ namespace Arrays
             Console.WriteLine(flags[1]);
             Console.WriteLine(flags[2]);
 
-            var names = new string[] {"Jack", "John", "Mary"};
+            var names = new string[] {  "Jack", "John", "Mary"};
         }
     }
 }
