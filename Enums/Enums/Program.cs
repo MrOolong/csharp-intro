@@ -20,6 +20,16 @@ namespace Enums
         {
             var method = ShippingMethod.Express;
             Console.WriteLine((int)method);
+
+            var methodId = 3;
+            Console.WriteLine((ShippingMethod)methodId);
+
+            Console.WriteLine(method.ToString());
+
+            // convert string to enum
+            var methodName = "Express";
+            // parsing - getting string and converting to different data type
+            var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
         }
     }
 }
