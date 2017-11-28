@@ -12,9 +12,14 @@ namespace Iterations_ForEach
         {
             var name = "John Smith";
 
-            for (var i = 0; i < name.Length; i++)
+            //for (var i = 0; i < name.Length; i++)
+            //{
+            //    Console.WriteLine(name[i]);
+            //}
+
+            foreach (var character in name)
             {
-                Console.WriteLine(name[i]);
+                Console.WriteLine(character);
             }
         }
     }
