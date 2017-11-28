@@ -10,13 +10,19 @@ namespace Iterations_WhileLoop
     {
         static void Main(string[] args)
         {
-            var i = 0;
-            while (i <= 10)
+            while (true)
             {
-                if (i % 2 == 0)
-                    Console.WriteLine(i);
+                Console.Write("Type your name: "); 
+                var input = Console.ReadLine();
 
-                i++;
+                if (!String.IsNullOrWhiteSpace(input))
+                {
+                    Console.WriteLine("@Echo: " + input);
+                    //continue;
+                }
+
+                break;
+                                   
             }
         }
     }
