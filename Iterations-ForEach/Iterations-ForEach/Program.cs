@@ -10,7 +10,12 @@ namespace Iterations_ForEach
     {
         static void Main(string[] args)
         {
+            var name = "John Smith";
 
+            for (var i = 0; i < name.Length; i++)
+            {
+                Console.WriteLine(name[i]);
+            }
         }
     }
 }
