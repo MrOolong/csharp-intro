@@ -31,6 +31,10 @@ namespace GenericLists
             }
             foreach (var number in numbers)
                 Console.WriteLine(number);
+
+            // removes all elements from the list
+            numbers.Clear();
+            Console.WriteLine("Count: " + numbers.Count);
         }
     }
 }
