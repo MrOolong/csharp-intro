@@ -23,6 +23,18 @@ namespace Text_Strings
             var names = fullName.Split(' ');
             Console.WriteLine("FirstName: " + names[0]);
             Console.WriteLine("LastName: " + names[1]);
+
+            Console.WriteLine(fullName.Replace("Dennis", "Dennis John"));
+
+            if (String.IsNullOrWhiteSpace(" "))
+                Console.WriteLine("Invalid");
+
+            var str = "25";
+            var age = Convert.ToByte(str);
+            Console.WriteLine(age);
+
+            float price = 29.95f;
+            Console.WriteLine(price.ToString("C0"));
         }
     }
 }
