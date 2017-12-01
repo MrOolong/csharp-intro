@@ -11,28 +11,29 @@ namespace SummarizingText
         static void Main(string[] args)
         {
             var sentence = "This is going to be a really really really really really long text.";
-            const int maxLength = 20;
+            var summary = SummerizeText(sentence, 25);
+            Console.WriteLine(summary);
+        }
 
-            if (sentence.Length < maxLength)
-                Console.WriteLine(sentence);
-            else
+        static string SummerizeText(string text, int maxLength = 20)
+        {
+
+            if (text.Length < maxLength)
+                return text;
+
+            var words = text.Split(' ');
+            var totalCharacters = 0;
+            var summaryWords = new List<string>();
+            // sentence.Substring(0, maxLength);
+            foreach (var word in words)
             {
-                var words = sentence.Split(' ');
-                var totalCharacters = 0;
-                var summaryWords = new List<string>();
-                // sentence.Substring(0, maxLength);
-                foreach (var word in words)
-                {
-                    summaryWords.Add(word);
+                summaryWords.Add(word);
 
-                    totalCharacters += word.Length + 1;
-                    if (totalCharacters > maxLength)
-                        break;
-                }
-
-                var summary = String.Join(" ", summaryWords) + "...";
-                Console.WriteLine(summary);
+                totalCharacters += word.Length + 1;
+                if (totalCharacters > maxLength)
+                    break;
             }
+            return String.Join(" ", summaryWords) + "...";
         }
     }
 }
