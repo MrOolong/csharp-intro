@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SummarizingText
 {
-    class StringUtility
+    public class StringUtility
     {
-        static string SummerizeText(string text, int maxLength = 20)
+        public static string SummerizeText(string text, int maxLength = 20)
         {
 
             if (text.Length < maxLength)
