@@ -25,19 +25,16 @@ namespace Section9_Exercise2
             Console.WriteLine("There are " + countText.Length + " total characters in test2.txt");
             Console.WriteLine();
 
-            // Print the number of words within test1.txt
-            //Console.WriteLine("There are " + countArray.Length + " words in test2.txt");
-
-            // printing indiviual word within array - now need to count it
-            // Console.WriteLine(countArray[0]);
-
             //foreach loop to print each individual word
             Console.WriteLine("The char length of each word in test2.txt is as follows:");
-            foreach (string word in countArray)
-            {
-                // word.Length displays character length - use if logic to display the longest
-                System.Console.WriteLine(word.Length);
-            }
+
+                foreach (string word in countArray)
+                {
+                    // word.Length displays character length - use if logic to display the longest
+                    System.Console.WriteLine(word.Length);
+                }
+
+                // bubble sort?
         }
     }
 }
