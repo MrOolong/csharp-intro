@@ -14,14 +14,13 @@ namespace Section9_Exercise1
             string path = @"C:\Users\dennis\Desktop\csharp-intro\Section9_Exercise1\test1.txt";
 
             string countText = File.ReadAllText(path);
-            string[] countArray = new string[] { };
-            countArray = countText.Split(' ');
+            var countArray = countText.Split(' ');
+
             Console.WriteLine(countText);
             Console.WriteLine(countText.Length);
-            Console.WriteLine(countArray);
 
-
-
+            // printing indiviual word within array - now need to count it
+            Console.WriteLine(countArray[0]);
         }
     }
 }
