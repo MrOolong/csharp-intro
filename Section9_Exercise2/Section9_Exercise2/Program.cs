@@ -23,7 +23,7 @@ namespace Section9_Exercise2
 
             // Print the number of characters within test1.txt
             Console.WriteLine("There are " + countText.Length + " total characters in test2.txt");
-            Console.WriteLine();
+            Console.WriteLine();    
 
             //foreach loop to print each individual word
             Console.WriteLine("The char length of each word in test2.txt is as follows:");
@@ -34,7 +34,19 @@ namespace Section9_Exercise2
                     System.Console.WriteLine(word.Length);
                 }
 
-                // bubble sort?
+            // 
+            for (var i = 0; i < countArray.Length; i++)
+            {
+                for (var j = 0; j < countArray[i].Length; j++)
+                {
+                    var ith = countArray[i][j];
+                    var jth = countArray[i];
+                    if (ith > jth)
+                    {
+
+                    }
+                }
+            }
         }
     }
 }
