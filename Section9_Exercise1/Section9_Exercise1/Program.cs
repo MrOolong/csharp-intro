@@ -11,6 +11,15 @@ namespace Section9_Exercise1
     {
         static void Main(string[] args)
         {
+            string path = @"C:\Users\dennis\Desktop\csharp-intro\Section9_Exercise1\test1.txt";
+
+            string countText = File.ReadAllText(path);
+            string[] countArray = countText.Split(' ');
+            Console.WriteLine(countText);
+            Console.WriteLine(countText.Length);
+            Console.WriteLine(countArray);
+
+
 
         }
     }
