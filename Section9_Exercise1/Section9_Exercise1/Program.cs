@@ -17,10 +17,16 @@ namespace Section9_Exercise1
             var countArray = countText.Split(' ');
 
             Console.WriteLine(countText);
-            Console.WriteLine(countText.Length);
+            Console.WriteLine("There are " + countText.Length + " characters in test.txt");
 
             // printing indiviual word within array - now need to count it
-            Console.WriteLine(countArray[0]);
+            // Console.WriteLine(countArray[0]);
+
+            // foreach loop to print each individual word
+            foreach (string word in countArray)
+            {
+                System.Console.WriteLine(word);
+            }
         }
     }
 }
