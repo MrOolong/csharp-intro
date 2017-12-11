@@ -42,8 +42,9 @@ namespace Section9_Exercise2
                     var ith = countArray[i][j];
                     var jth = countArray[i];
                     if (ith > jth)
+                    // if (ith > jth.ToCharArray()[i])
                     {
-
+                        Console.WriteLine(countArray[i]);
                     }
                 }
             }
