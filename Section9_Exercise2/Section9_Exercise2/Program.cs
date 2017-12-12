@@ -17,6 +17,9 @@ namespace Section9_Exercise2
             var countArray = countText.Split(' ');
             var firstWord = countArray[0];
             var firstWordLength = countArray[0].Length;
+            //var maxWordLength = countArray.Max();
+
+            //Console.WriteLine(maxWordLength);
 
             // Print the text within test1.txt
             Console.WriteLine("test2.txt contains the following text:");
@@ -43,18 +46,23 @@ namespace Section9_Exercise2
             Console.WriteLine();
 
             // 
-            for (int i = 0; i < countArray.Length; i++)
-            {
-                for (int j = 0; j < countArray[i].Length; j++)
-                {
-                    var ith = countArray[i][j];
-                    var jth = countArray[i].Length;
-                    if (firstWordLength > jth)
-                    {
-                        Console.WriteLine(countArray[i]);
-                    }
-                }
-            }
+            //for (int i = 0; i < countArray.Length; i++)
+            //{
+            //    for (int j = 0; j < countArray[i].Length; j++)
+            //    {
+            //        var ith = countArray[i][j];
+            //        var jth = countArray[i].Length;
+            //        // insert logic to compare max word length to next word in the string
+            //        if (firstWordLength > )
+            //        {
+            //            Console.WriteLine(countArray[i]);
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Wrong word");
+            //        }
+            //    }
+            //}
         }
     }
 }
