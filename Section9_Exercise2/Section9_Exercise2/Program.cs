@@ -15,10 +15,16 @@ namespace Section9_Exercise2
 
             string countText = File.ReadAllText(path);
             var countArray = countText.Split(' ');
+            var firstWord = countArray[0];
+            var firstWordLength = countArray[0].Length;
 
             // Print the text within test1.txt
             Console.WriteLine("test2.txt contains the following text:");
             Console.WriteLine("\"" + countText + "\"");
+            Console.WriteLine();
+
+            // Print the first word within test1.txt
+            Console.WriteLine("The first word in the file is: " + firstWord);
             Console.WriteLine();
 
             // Print the number of characters within test1.txt
@@ -34,15 +40,16 @@ namespace Section9_Exercise2
                     System.Console.WriteLine(word.Length);
                 }
 
+            Console.WriteLine();
+
             // 
-            for (var i = 0; i < countArray.Length; i++)
+            for (int i = 0; i < countArray.Length; i++)
             {
-                for (var j = 0; j < countArray[i].Length; j++)
+                for (int j = 0; j < countArray[i].Length; j++)
                 {
                     var ith = countArray[i][j];
-                    var jth = countArray[i];
-                    if (ith > jth)
-                    // if (ith > jth.ToCharArray()[i])
+                    var jth = countArray[i].Length;
+                    if (firstWordLength > jth)
                     {
                         Console.WriteLine(countArray[i]);
                     }
