@@ -21,20 +21,24 @@ namespace ControlFlow_Exercise4
 
             // calculate the difference between the speed of the car and the speed limit
             int difference = (userInput2 - userInput1);
-            int difference1 = (userInput2 % userInput1);
-            int difference2 = (userInput2 / userInput1);
 
             if (userInput2 > userInput1)
             {
-                Console.WriteLine(difference);
-                Console.WriteLine(difference1);
-                Console.WriteLine(difference2);
+                Console.WriteLine("That's " + difference + " miles per hour over the limit!");
+                Console.WriteLine();
+
+                int demerit = (difference / 5);
+                //Console.WriteLine(demerit);
 
                 // another if statement to determine if the driver should lose their license
-                //if (demerits > 12)
-                //{
-                //    Console.WriteLine("License Suspended");
-                //}
+                if (demerit > 12)
+                {
+                    Console.WriteLine("License Suspended");
+                }
+                else
+                {
+                    Console.WriteLine("You're docked " + demerit + " demerit points");
+                }
             }
             else
             {
