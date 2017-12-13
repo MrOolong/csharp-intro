@@ -22,6 +22,7 @@ namespace ControlFlow_Exercise4
             // calculate the difference between the speed of the car and the speed limit
             int difference = (userInput2 - userInput1);
 
+            // if logic to determine if car is is going faster than the posted speed limit
             if (userInput2 > userInput1)
             {
                 Console.WriteLine("That's " + difference + " miles per hour over the limit!");
@@ -38,11 +39,13 @@ namespace ControlFlow_Exercise4
                 else
                 {
                     Console.WriteLine("You're docked " + demerit + " demerit points");
+                    Console.WriteLine();
                 }
             }
             else
             {
                 Console.WriteLine("Ok");
+                Console.WriteLine();
             }
         }
     }
