@@ -17,7 +17,7 @@ namespace Section9_Exercise2
             var countArray = countText.Split(' ');
             var firstWord = countArray[0];
             var firstWordLength = countArray[0].Length;
-            //var maxWordLength = countArray.Max();
+            var maxWordLength = 0;
 
             //Console.WriteLine(maxWordLength);
 
@@ -44,6 +44,15 @@ namespace Section9_Exercise2
                 }
 
             Console.WriteLine();
+
+            for (var i = 0; i < countArray.Length; i++)
+            {
+                if (countArray[i].Length > maxWordLength)
+                {
+                    maxWordLength = countArray[i].Length;
+                }
+            }
+            Console.WriteLine("The longest word in this file is: " + maxWordLength);
 
             // 
             //for (int i = 0; i < countArray.Length; i++)
