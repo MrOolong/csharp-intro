@@ -11,19 +11,22 @@ namespace ControlFlow_Exercise4
         static void Main(string[] args)
         {
             // Write a program which takes two numbers from the console and displays the maximum of the two.
-            Console.WriteLine("Please enter a number");
+            Console.WriteLine("Please enter the speed limit");
             var userInput1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Please enter a 2nd number");
+            Console.WriteLine("Please enter the speed of a car");
             var userInput2 = Convert.ToInt32(Console.ReadLine());
 
-            if (userInput1 > userInput2)
+            // calculate the difference between the speed of the car and the speed limit
+            int difference = (userInput2 - userInput1);
+
+            if (userInput2 > userInput1)
             {
-                Console.WriteLine(userInput1 + " is the larger number");
+                Console.WriteLine(difference);
             }
             else
             {
-                Console.WriteLine(userInput2 + " is the larger number");
+                Console.WriteLine("Ok");
             }
         }
     }
