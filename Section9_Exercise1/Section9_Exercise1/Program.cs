@@ -27,15 +27,6 @@ namespace Section9_Exercise1
 
             // Print the number of words within test1.txt
             Console.WriteLine("There are " + countArray.Length + " words in test1.txt");
-
-            // printing indiviual word within array - now need to count it
-            // Console.WriteLine(countArray[0]);
-
-            // foreach loop to print each individual word
-            //foreach (string word in countArray)
-            //{
-            //    System.Console.WriteLine(word);
-            //}
         }
     }
 }
