@@ -35,6 +35,7 @@ namespace ControlFlow_Exercise4
                 if (demerit > 12)
                 {
                     Console.WriteLine("License Suspended");
+                    Console.WriteLine();
                 }
                 else
                 {
