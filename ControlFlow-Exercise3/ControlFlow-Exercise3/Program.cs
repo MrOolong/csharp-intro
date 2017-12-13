@@ -10,20 +10,24 @@ namespace ControlFlow_Exercise3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the width and height of an image");
             int width, height;
-            //var numbers = new int[2];
-            //numbers = Convert.ToInt32(Console.ReadLine(width, height));
+            Console.WriteLine("Enter the width of the image");
+            width = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the height of the image");
+            height = Convert.ToInt32(Console.ReadLine());
 
             if ( width > height)
             {
                 Console.WriteLine("The image is landscape");
             }
-            else
+            else if ( height > width)
             {
                 Console.WriteLine("The image is portrait");
             }
-
+            else if (width == height)
+            {
+                Console.WriteLine("That's square format!");
+            }
         }
     }
 }
