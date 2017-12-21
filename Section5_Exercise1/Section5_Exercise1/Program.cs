@@ -13,17 +13,17 @@ namespace Section5_Exercise1
             int min = 1;
             int max = 100;
             int counter = 0;
-            int divisor = 3;
+            int div3 = 3;
 
             for (int i = min; i < max; i++)
             {
-                if (i / divisor)
+                if ()
                 {
                     counter++;
                 }
             }
 
-            Console.WriteLine("X amount of numbers are divisible by 3");
+            Console.WriteLine(counter + " Numbers are divisible by 3");
         }
     }
 }
